@@ -1,5 +1,6 @@
 package com.bettycc.swipeactivity;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -22,6 +23,7 @@ public class MainActivity extends ActionBarActivity {
         mDecorView = getWindow().getDecorView();
         mTouchListener = new TouchListener(mDecorView);
         mGestureDetector = new GestureDetector(this, mTouchListener);
+        mDecorView.setBackgroundColor(Color.RED);
     }
 
 

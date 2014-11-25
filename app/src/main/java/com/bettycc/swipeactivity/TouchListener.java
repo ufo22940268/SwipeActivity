@@ -7,6 +7,7 @@ import android.os.Build;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by ccheng on 11/25/14.
@@ -59,7 +60,7 @@ class TouchListener extends GestureDetector.SimpleOnGestureListener {
     }
 
     private void onScrollToEnd() {
-
+        Toast.makeText(mContext, "on scroll ended", Toast.LENGTH_SHORT).show();
     }
 
     public void onActionUp(MotionEvent e) {
