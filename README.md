@@ -2,7 +2,7 @@ SwipeActivity
 =============
 
 Swipe to finish activity. Because it quite difficult for large screen device to reach the back button on the left top corner, 
-i create this project to make activity be closed when user swipe for a distance. You can find this effect on My favourite app [smzdm](smzdm.com).
+i create this project to make activity be closed when user swipe for a distance. You can find this effect on My favourite app [smzdm](https://play.google.com/store/apps/details?id=com.smzdm.client.android).
 
 ![](./slide2.gif)
 
