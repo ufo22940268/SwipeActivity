@@ -6,6 +6,10 @@ i create this project to make activity be closed when user swipe for a distance.
 
 ![](./slide2.gif)
 
+Integrate
+=========
+    compile 'me.biubiubiu.swipeactivity:library:+'
+
 Usage
 =============
 You only need to make your activity to be the child of `SwipeActivity`.
