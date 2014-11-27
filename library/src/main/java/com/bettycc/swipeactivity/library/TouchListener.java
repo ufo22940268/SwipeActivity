@@ -1,13 +1,14 @@
-package com.bettycc.swipeactivity;
+package com.bettycc.swipeactivity.library;
 
-import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
+
+import com.bettycc.swipactivity.library.R;
+import com.nineoldandroids.animation.ObjectAnimator;
 
 /**
  * Created by ccheng on 11/25/14.
@@ -19,6 +20,7 @@ class TouchListener extends GestureDetector.SimpleOnGestureListener {
     private final float mScrollThres;
     private View mDecorView;
     private boolean mAnimate;
+    private OnScrollEndListener mOnScrollEndListener;
 
     TouchListener(View decorView) {
         mDecorView = decorView;
@@ -60,7 +62,22 @@ class TouchListener extends GestureDetector.SimpleOnGestureListener {
     }
 
     private void onScrollToEnd() {
-        Toast.makeText(mContext, "on scroll ended", Toast.LENGTH_SHORT).show();
+        if (mOnScrollEndListener != null) {
+            mOnScrollEndListener.onScrollToEnd();
+        }
+    }
+
+    public void setOnScrollEndListener(OnScrollEndListener onScrollEndListener) {
+        mOnScrollEndListener = onScrollEndListener;
+    }
+
+    public OnScrollEndListener getOnScrollEndListener() {
+        return mOnScrollEndListener;
+    }
+
+    public interface OnScrollEndListener {
+
+        public void onScrollToEnd();
     }
 
     public void onActionUp(MotionEvent e) {
