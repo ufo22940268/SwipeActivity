@@ -25,3 +25,8 @@ Customization
 =============
 
 Be default, SwipeActivity extends stock `Activity`. if you want to use `SherlockActivity` or `ActionBarActivity`, you just need to change the parent of `SwipeActivity`, then it's good to go.
+
+Compatibility
+============
+
+API 8 and above
