@@ -8,16 +8,15 @@ i create this project to make activity be closed when user swipe for a distance.
 
 Usage
 =============
-You only need to make your activity to be the child of `SwipeActivity`
+You only need to make your activity to be the child of `SwipeActivity`.
   
     public class SecondActivity extends SwipeActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentViewMod(R.layout.activity_main);
+            setContentView(R.layout.activity_main);
         }
     }
-
 Customization
 =============
 
