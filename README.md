@@ -8,7 +8,14 @@ i create this project to make activity be closed when user swipe for a distance.
 
 Integrate
 =========
+
+**gradle**
+
     compile 'me.biubiubiu.swipeactivity:library:1.2'
+    
+**eclipse**
+
+    Import library to your project.
 
 Usage
 =============
