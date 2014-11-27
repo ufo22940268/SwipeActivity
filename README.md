@@ -8,7 +8,7 @@ i create this project to make activity be closed when user swipe for a distance.
 
 Integrate
 =========
-    compile 'me.biubiubiu.swipeactivity:library:+'
+    compile 'me.biubiubiu.swipeactivity:library:1.2'
 
 Usage
 =============
