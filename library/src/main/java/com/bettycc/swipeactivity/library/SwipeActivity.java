@@ -32,7 +32,7 @@ public class SwipeActivity extends Activity {
         });
     }
 
-    public void setContentViewMod(int layoutResID) {
+    public void setContentView(int layoutResID) {
         getLayoutInflater().inflate(layoutResID, mContentView);
     }
 

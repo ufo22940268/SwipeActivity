@@ -11,6 +11,6 @@ public class SecondActivity extends SwipeActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentViewMod(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
     }
 }
