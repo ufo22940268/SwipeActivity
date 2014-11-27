@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.bettycc.swipeactivity"
-        minSdkVersion 16
+        minSdkVersion 8
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,9 @@ android {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 

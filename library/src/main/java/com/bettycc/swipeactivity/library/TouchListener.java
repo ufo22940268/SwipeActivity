@@ -15,7 +15,7 @@ import com.nineoldandroids.animation.ObjectAnimator;
  */
 class TouchListener extends GestureDetector.SimpleOnGestureListener {
 
-    private static final float SCROLL_DIV = 3;
+    private static final float SCROLL_DIV = 2;
     private final Context mContext;
     private final float mScrollThres;
     private View mDecorView;
